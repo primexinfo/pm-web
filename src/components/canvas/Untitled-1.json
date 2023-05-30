@@ -1,0 +1,57 @@
+{
+	"uri": "network-transformed.glb",
+	"mimeType": "model/gltf-binary",
+	"validatorVersion": "2.0.0-dev.3.8",
+	"validatedAt": "2023-03-07T10:21:28.827Z",
+	"issues": {
+		"numErrors": 0,
+		"numWarnings": 0,
+		"numInfos": 2,
+		"numHints": 0,
+		"messages": [
+			{
+				"code": "UNSUPPORTED_EXTENSION",
+				"message": "Cannot validate an extension as it is not supported by the validator: 'KHR_draco_mesh_compression'.",
+				"severity": 2,
+				"pointer": "/extensionsUsed/0"
+			},
+			{
+				"code": "UNUSED_OBJECT",
+				"message": "This object may be unused.",
+				"severity": 2,
+				"pointer": "/bufferViews/0"
+			}
+		],
+		"truncated": false
+	},
+	"info": {
+		"version": "2.0",
+		"generator": "glTF-Transform v3.0.4",
+		"extensionsUsed": [
+			"KHR_draco_mesh_compression"
+		],
+		"extensionsRequired": [
+			"KHR_draco_mesh_compression"
+		],
+		"resources": [
+			{
+				"pointer": "/buffers/0",
+				"mimeType": "application/gltf-buffer",
+				"storage": "glb",
+				"byteLength": 70156
+			}
+		],
+		"animationCount": 0,
+		"materialCount": 1,
+		"hasMorphTargets": false,
+		"hasSkins": false,
+		"hasTextures": false,
+		"hasDefaultScene": true,
+		"drawCallCount": 1,
+		"totalVertexCount": 30073,
+		"totalTriangleCount": 12685,
+		"maxUVs": 0,
+		"maxInfluences": 0,
+		"maxAttributes": 2
+	}
+}
