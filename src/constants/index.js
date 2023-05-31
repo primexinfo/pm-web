@@ -47,6 +47,7 @@ export const testimonials = [
     designation: "CEO",
     company: "Primex Information System",
     image: ceo,
+    website: "#"
   },
   {
     testimonial:
@@ -64,6 +65,7 @@ export const testimonials = [
     designation: "UI/UX designer",
     company: " Css, Figma, Adobe x",
     image: "https://randomuser.me/api/portraits/men/7.jpg",
+    website: "#"
   },
   {
     testimonial:
@@ -72,6 +74,7 @@ export const testimonials = [
     designation: "Graphics and Content Designer",
     company: "Figma, adobe x, illustrate",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
+    website: "#"
   },
   {
     testimonial:
@@ -80,6 +83,7 @@ export const testimonials = [
     designation: "Senior Software Engineer",
     company: "Java, PHP",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
+    website: "#"
   },
 ];
 
@@ -152,7 +156,7 @@ export const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mongo",
         color: "green-text-gradient",
       },
       {

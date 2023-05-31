@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Map from "./Map";
@@ -65,6 +65,9 @@ const Button = styled.button`
   border-radius: 5px;
   padding: 20px;
 `;
+const formControl = {
+  padding: "20px"
+}
 
 const Right = styled.div`
   flex: 1;
@@ -76,7 +79,8 @@ const Right = styled.div`
 
 const Contact = () => {
   const form = useRef();
-  // const [success, setSuccess] = useState(null);
+  const [isActive, setActive] = useState('');
+  const [isChecked, setIsChecked] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -90,21 +94,63 @@ const Contact = () => {
       });
       e.target.reset();
   };
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+    setActive(!isActive);
+  };
+
+  const handleDropdown = (data) => {
+    if(data == 'Other'){
+      setActive(true);
+      setIsChecked(false);
+    }else{
+      setActive(false);
+      setIsChecked(true);
+    }
+  }
+  console.log(isChecked);
+
   return (
     <Section id="contact">
       <Container>
         <Left>
           <Form ref={form} onSubmit={sendEmail}>
             <Title>Contact Us</Title>
-            <Input placeholder="Name" name="user_name" />
-            <Input placeholder="Email" name="user_email" />
-            <Input placeholder="Subject" name="subject" />
-            <TextArea
+            <input type="text" className="px-4 py-3 rounded-md bg-white text-[#090017]" placeholder="Name" name="user_name" />
+            <input type="email" className="px-4 py-3 rounded-md bg-white text-[#090017]" placeholder="Email" name="user_email" />
+            {!isActive && (
+              <select name="subject" className="px-4 py-3 rounded-md bg-white text-[#090017]" onChange={(e) => {
+                handleDropdown(e.target.value);
+                
+                }}>
+                <option selected="false" disabled>Select Subject</option>
+                <option value="Therapy Solution">Therapy Solution</option>
+                <option value="Doctors Portal">Doctors Portal</option>
+                <option value="ERP/Accounts/HR">ERP/Accounts/HR</option>
+                <option value="Web Application">Web Application</option>
+                <option value="Mobile Application">Mobile Application</option>
+                <option value="Other">Other</option>
+              </select>
+            )}
+            {isActive && (
+              <input type="text" className="px-4 py-3 rounded-md bg-white text-[#090017]" placeholder="Subject" name="subject" />
+            )}
+            {isActive && (
+              <>
+                <div className="py-1">
+                <label className="mr-2" for="checkbox">Return to select option</label>
+                <input type="checkbox" id="checkbox" checked={isChecked} onChange={handleCheckboxChange} className="px-4 py-3 rounded-md bg-white text-[#fff]" />
+                </div>
+              </>
+              
+            )}
+            <textarea className="bg-white text-[#090017] px-4 py-3 rounded-md"
               placeholder="Write your message"
               name="message"
-              rows={5}
-            />
-            <Button type="submit">Send</Button>
+              rows={4}
+            ></textarea>
+            <button className="px-4 py-3 rounded-md hover:bg-orange-800 bg-orange-700" type="submit">Send</button>
           </Form>
         </Left>
         <Right>

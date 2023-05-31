@@ -1,6 +1,15 @@
 import React from 'react'
 // import Contact from './Contact'
 // import Navbar from './Navbar'
+import styled from "styled-components";
+const Button = styled.button`
+  background-color: #EF4E23;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px;
+`;
 
 
 const ServicePage = () => {
@@ -36,8 +45,8 @@ const ServicePage = () => {
                 <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                 Creative Direction, User Experience, Visual Design, Project Management, Team Leading
                 </td>
-                <td className="px-6 py-4 text-2xl">
-                $500
+                <td className="px-3">
+                    <a href="#contact" className="btn btn"><Button>Ge a Quote</Button></a>
                 </td>
             </tr>
             <tr className="border-b border-gray-200 dark:border-gray-700">
@@ -50,8 +59,8 @@ const ServicePage = () => {
                 <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                 Creative Direction, User Experience, Visual Design, Project Management, Team Leading
                 </td>
-                <td className="px-6 py-4 text-2xl">
-                    $1999
+                <td className="px-3">
+                    <a href="#contact" className="btn btn"><Button>Ge a Quote</Button></a>
                 </td>
             </tr>
             <tr className="border-b border-gray-200 dark:border-gray-700">
@@ -64,8 +73,8 @@ const ServicePage = () => {
                 <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                 Creative Direction, User Experience, Visual Design, SEO, Online Marketing
                 </td>
-                <td className="px-6 py-4 text-2xl">
-                    $2000
+                <td className="px-3">
+                    <a href="#contact" className="btn btn"><Button>Ge a Quote</Button></a>
                 </td>
             </tr>
             <tr className="border-b border-gray-200 dark:border-gray-700">
@@ -78,8 +87,8 @@ const ServicePage = () => {
                 <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                 User Experience, Visual Design
                 </td>
-                <td className="px-6 py-4 text-2xl">
-                    $1000
+                <td className="px-3">
+                    <a href="#contact" className="btn btn"><Button>Ge a Quote</Button></a>
                 </td>
             </tr>
             <tr>
@@ -92,8 +101,8 @@ const ServicePage = () => {
                 <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                 User Experience, Visual Design
                 </td>
-                <td className="px-6 py-4 text-2xl">
-                    $1599
+                <td className="px-3">
+                    <a href="#contact" className="btn btn"><Button>Ge a Quote</Button></a>
                 </td>
             </tr>
         </tbody>
