@@ -8,19 +8,12 @@ import { StarWrapper } from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon, desc }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="xs:w-[80%] md:w-[22%]">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+      <div className="bg-tertiary rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
@@ -41,7 +34,7 @@ const About = () => {
     <>
       <motion.div id="service" variants={textVariant()}>
         <p className={styles.sectionSubText}>Our</p>
-        <h2 className={styles.sectionHeadText}>Services.</h2>
+        <h2 className={styles.sectionHeadText}>Services</h2>
       </motion.div>
 
       <motion.p
@@ -52,7 +45,7 @@ const About = () => {
       Our team of experienced professionals is dedicated to delivering high-quality services that exceed our clients' expectations. 
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 w-full items-center justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
