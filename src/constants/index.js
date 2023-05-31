@@ -7,12 +7,16 @@ import stc from "../assets/partners/stc.png";
 import synctella from "../assets/partners/synctella.png";
 import usaid from "../assets/partners/usaid.jpg";
 
+
 import femni2 from "../assets/femni.png";
 import sadia2 from "../assets/sadia.png";
 import helz from "../assets/helpz4.png";
 import travel2 from "../assets/travel2.png";
 import erp from "../assets/erp.png";
 import mirror from "../assets/mirror2.png";
+import binge from "../assets/binge.png";
+import ride from "../assets/Ride.jpg";
+import edutech from "../assets/edutech.jpg";
 
 import web from "../assets/web.png";
 import mobile from "../assets/mobile.png";
@@ -276,6 +280,69 @@ export const projects = [
       },
     ],
     image: mirror,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "OTT Platform",
+    description:
+      "We offer a comprehensive OTT platform, to deliver high-quality streaming content to their audience, complete with advanced features like personalized recommendations and seamless cross-device accessibility",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: binge,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Edutech Platform",
+    description:
+      "We offer a cutting-edge Edutech platform, transforming online learning with interactive features, analytics, and collaboration tools, empowering educational institutions and learners.",
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: edutech,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Ride Sharing",
+    description:
+      "We offer a seamless ride-sharing platform, connecting drivers and passengers for convenient and efficient transportation with features like real-time tracking and secure payments.",
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ride,
     source_code_link: "https://github.com/",
   },
 ];

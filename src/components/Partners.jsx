@@ -56,7 +56,7 @@ const Partners = () => {
             <div className="grid">
               <div className="flex flex-row flex-wrap justify-center gap-5">
                 {technologies.map((technology) => (
-                    <div className="w-36 h-28 flex items-center bg-white justify-center rounded-md" key={technology.name}>
+                    <div className="w-36 h-28 flex items-center bg-white justify-center rounded-md hover:scale-110 transition-transform duration-300" key={technology.name}>
                       <img className="w-24 h-auto rounded-md" src={technology.icon} alt={technology.name} />
                     </div>
                   

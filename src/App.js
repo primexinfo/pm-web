@@ -44,7 +44,7 @@ function App() {
         {/* <Products /> */}
         <Partners />
         <Projects />
-        <ServicePage/>
+        {/* <ServicePage/> */}
         <Team />
         <Contact />
       </Container>

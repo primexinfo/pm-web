@@ -65,20 +65,6 @@ const ServicePage = () => {
             </tr>
             <tr className="border-b border-gray-200 dark:border-gray-700">
                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                EC MANAGER ++
-                </th>
-                <td className="px-6 py-4">
-                ecommerce website with android and IOS
-                </td>
-                <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                </td>
-                <td className="px-3">
-                    <a href="#contact" className="btn btn"><Button>Ge a Quote</Button></a>
-                </td>
-            </tr>
-            <tr className="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
                 EC RIDER
                 </th>
                 <td className="px-6 py-4">
