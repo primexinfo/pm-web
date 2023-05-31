@@ -39,7 +39,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
       >
         Primex offers a range of services to help businesses achieve their technological goals. We understand that technology plays a crucial role in the success of any business, and we strive to provide customized solutions that meet the unique needs of each of our clients.
       Our team of experienced professionals is dedicated to delivering high-quality services that exceed our clients' expectations. 

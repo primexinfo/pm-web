@@ -21,7 +21,8 @@ import creator from "../assets/creator.png";
 
 import ceo from "../assets/ceo.jpeg";
 import mizan from "../assets/mizan.jpeg";
-import user from "../assets/user.avif"
+import user from "../assets/user.avif";
+import mentor from "../assets/partners/mentor.png";
 
 import { RiNumber2 } from "react-icons/ri";
 
@@ -143,6 +144,10 @@ export const technologies = [
   {
     name: "USAID",
     icon: usaid,
+  },
+  {
+    name: "Mentor",
+    icon: mentor,
   },
 ];
 

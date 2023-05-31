@@ -28,10 +28,7 @@ const Partner = styled.div`
   justify-content: center;
   gap: 10;
 `;
-// const Ball = styled.div`
-//   width: 150px;
-//   height: 150px;
-// `;
+
 const Partners = () => {
   return (
     <>
@@ -59,8 +56,8 @@ const Partners = () => {
             <div className="grid">
               <div className="flex flex-row flex-wrap justify-center gap-5">
                 {technologies.map((technology) => (
-                    <div className="w-28 flex items-center bg-white justify-center rounded-md" key={technology.name}>
-                      <img className="w-full rounded-md" src={technology.icon} alt={technology.name} />
+                    <div className="w-36 h-28 flex items-center bg-white justify-center rounded-md" key={technology.name}>
+                      <img className="w-24 h-auto rounded-md" src={technology.icon} alt={technology.name} />
                     </div>
                   
                   ))}
