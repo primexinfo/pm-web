@@ -20,7 +20,8 @@ import backend from "../assets/backend.png";
 import creator from "../assets/creator.png";
 
 import ceo from "../assets/ceo.jpeg";
-import sse from "../assets/sse.jpeg";
+import mizan from "../assets/mizan.jpeg";
+import user from "../assets/user.avif"
 
 import { RiNumber2 } from "react-icons/ri";
 
@@ -51,11 +52,11 @@ export const testimonials = [
   },
   {
     testimonial:
-      "Programming is not just about writing code, it's about crafting solutions that are efficient, elegant, and scalable, while constantly learning and adapting to new technologies.",
+      "Programming is not just about writing code, it's about crafting solutions that are efficient, elegant, and scalable, while constantly learning and adapting to new idea and technologies.",
     name: "Mizanur Rahman",
     designation: "Software Engineer",
     company: "Laravel  PHP  Mysql",
-    image: sse,
+    image: mizan,
     website: "https://www.devmizanur.com"
   },
   {
@@ -64,7 +65,7 @@ export const testimonials = [
     name: "Ragib Ekhowan",
     designation: "UI/UX designer",
     company: " Css, Figma, Adobe x",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    image: user,
     website: "#"
   },
   {
@@ -73,7 +74,7 @@ export const testimonials = [
     name: "Dweep biswas",
     designation: "Graphics and Content Designer",
     company: "Figma, adobe x, illustrate",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    image: user,
     website: "#"
   },
   {
@@ -82,7 +83,7 @@ export const testimonials = [
     name: "Sohag Mia",
     designation: "Senior Software Engineer",
     company: "Java, PHP",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: user,
     website: "#"
   },
 ];
