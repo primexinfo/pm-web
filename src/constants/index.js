@@ -117,31 +117,31 @@ export const technologies = [
     icon: agro,
   },
   {
-    name: "CSS 3",
+    name: "AIR",
     icon: air,
   },
   {
-    name: "JavaScript",
+    name: "BGB",
     icon: bgb,
   },
   {
-    name: "TypeScript",
+    name: "ITVS",
     icon: itvs,
   },
   {
-    name: "React JS",
+    name: "RG",
     icon: rg,
   },
   {
-    name: "Redux Toolkit",
+    name: "STCG",
     icon: stc,
   },
   {
-    name: "Tailwind CSS",
+    name: "Synctella",
     icon: synctella,
   },
   {
-    name: "Node JS",
+    name: "USAID",
     icon: usaid,
   },
 ];
