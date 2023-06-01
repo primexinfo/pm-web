@@ -6,10 +6,10 @@ import Social from "./Social";
 import WebDesign from "./WebDesign";
 
 const data = [
-  "Web Design",
-  "Networking",
-  "Product Design",
-  "Social Media",
+  "Web App",
+  "Mobile App",
+  "Ecom. Solution",
+  "Ride Share",
   
 ];
 
@@ -96,7 +96,7 @@ const Right = styled.div`
 `;
 
 const Works = () => {
-  const [work, setWork] = useState("Web Design");
+  const [work, setWork] = useState("Web App");
   return (
     <Section>
       <Container>
@@ -110,13 +110,13 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work === "Web Design" ? (
+          {work === "Web App" ? (
             <WebDesign />
-          ) : work === "Networking" ? (
+          ) : work === "Mobile App" ? (
             <Networking/>
-          ) : work === "Product Design" ? (
+          ) : work === "Ecom. Solution" ? (
             <ProductDesign />
-          ):work === "Social Media" ? (
+          ):work === "Ride Share" ? (
             <Social/>
           ):""}
         </Right>

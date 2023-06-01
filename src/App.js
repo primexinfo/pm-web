@@ -10,7 +10,7 @@ import Projects from "./components/Projects";
 import Service from "./components/Service";
 import Team from "./components/Team";
 import Step from "./components/Step";
-import ServicePage from "./components/ServicePage";
+// import ServicePage from "./components/ServicePage";
 import Notifications from 'react-notify-toast';
 
 
@@ -33,8 +33,8 @@ background-blend-mode: overlay;
 function App() {
   return (
     <>
-    <Notifications />
-      <Container className="relative z-0">
+      <Notifications />
+      <Container className="relative z-0 p-5">
         <Hero />
         <Who />
       

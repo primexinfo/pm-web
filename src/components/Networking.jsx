@@ -6,7 +6,7 @@ import Network from "./Network";
 import styled from "styled-components";
 
 const Desc = styled.div`
-  width: 200px;
+  width: 300px;
   height: 140px;
   padding: 12px;
   text-align: center;
