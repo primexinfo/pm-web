@@ -121,7 +121,7 @@ const Hero = () => {
       
       <Container>
         <Left>
-          <Title>Think. Make. Solve.</Title>
+          <h1 className="text-7xl">Think. Make. Solve.</h1>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>What We Do</Subtitle>
@@ -131,7 +131,7 @@ const Hero = () => {
           </Desc>
           <Button>Learn More</Button>
         </Left>
-        <Right>
+        <Right className="hidden md:block">
           <Canvas>
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />

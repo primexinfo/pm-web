@@ -28,7 +28,7 @@ const Desc = styled.div`
 const Development = () => {
   return (
     <>
-      <Canvas camera={{ position: [0, 0, 10] }}>
+      <Canvas className="hidden md:block" camera={{ position: [0, 0, 10] }}>
         <Suspense fallback={null}>
           <Stage environment="city" intensity={0.6}>
             <Network />
@@ -36,7 +36,7 @@ const Development = () => {
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>
       </Canvas>
-      <Desc>
+      <Desc className="hidden md:block">
         We design products with a strong focus on both world class design and
         ensuring your product is a market success.
       </Desc>

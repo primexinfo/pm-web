@@ -84,7 +84,7 @@ const Navbar = () => {
                <HiChevronDown />
             </ListItem>
             <ListItem> <a href="#works">Products</a> </ListItem>
-            <ListItem> <a href="#Prices">Prices</a></ListItem>
+            <ListItem> <a href="#Blog">Blog</a></ListItem>
             <ListItem> <a href="#contact">Contact</a> </ListItem>
           </List>
         </Links>

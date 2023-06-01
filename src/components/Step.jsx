@@ -1,15 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import styled from "styled-components";
 import { StepData } from "../constants";
 import Tilt from "react-tilt";
-import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import Typed from "react-typed";
-// const Section = styled.div`
-//   height: 100vh;
-// `;
 
 const StepCard = ({ index, icon, stepnumber, steptitle }) => {
   return (
@@ -49,13 +44,13 @@ const Step = () => {
   return (
     <>
       <motion.div
-        className="ml-20 mt-20 flex"
+        className="ml-8 md:ml-20 mt-8 flex"
         id="service"
         variants={textVariant()}
       >
-        <h2 className={styles.sectionHeadText}>THE WAY WE </h2>
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[25px]">THE WAY WE </h2>
         <Typed
-          className=" text-orange-600 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] pl-5"
+          className=" text-orange-600 font-bold md:text-[60px] sm:text-[20px] xs:text-[18px] text-[25px]  pl-5"
           strings={["WORKS", "DESIGN", "DELIVER"]}
           typeSpeed={120}
           backS peed={140}
@@ -72,8 +67,8 @@ const Step = () => {
         
       </div>
       </div>
-      <motion.div className="ml-20 mt-5 flex">
-          <h2 className="text-white font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[30px]">SUPPORT CHANNEL IS OPEN</h2>
+      <motion.div className="ml-6 md:ml-20 mt-5  flex">
+          <h2 className="text-white font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[24px]">SUPPORT CHANNEL IS OPEN</h2>
           <Typed
             className="text-orange-600 font-bold md:text-[50px] sm:text-[40px] xs:text-[30px] text-[30px] pl-5"
             strings={["24/7", "365 DAYS"]}

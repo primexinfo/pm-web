@@ -6,15 +6,15 @@ import Social from "./Social";
 import WebDesign from "./WebDesign";
 
 const data = [
-  "Web App",
-  "Mobile App",
-  "Ecom. Solution",
-  "Ride Share",
+  "Applications",
+  "Business Solutions",
+  "Cyber Security",
+  "Digital Marketing",
   
 ];
 
 const Section = styled.div`
-  height: 100vh;
+  ${'' /* height: 100vh; */}
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -50,11 +50,11 @@ const List = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 1px;
 `;
 
 const ListItem = styled.li`
-  font-size: 77px;
+  font-size: 60px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
@@ -96,7 +96,7 @@ const Right = styled.div`
 `;
 
 const Works = () => {
-  const [work, setWork] = useState("Web App");
+  const [work, setWork] = useState("Applications");
   return (
     <Section>
       <Container>
@@ -110,13 +110,13 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work === "Web App" ? (
+          {work === "Applications" ? (
             <WebDesign />
-          ) : work === "Mobile App" ? (
+          ) : work === "Business Solutions" ? (
             <Networking/>
-          ) : work === "Ecom. Solution" ? (
+          ) : work === "Cyber Security" ? (
             <ProductDesign />
-          ):work === "Ride Share" ? (
+          ):work === "Digital Marketing" ? (
             <Social/>
           ):""}
         </Right>
