@@ -25,6 +25,7 @@ import creator from "../assets/creator.png";
 
 import ceo from "../assets/ceo.jpeg";
 import mizan from "../assets/mizan.jpeg";
+import naim from "../assets/naim.jpeg"
 import user from "../assets/user.avif";
 import mentor from "../assets/partners/mentor.png";
 
@@ -89,6 +90,15 @@ export const testimonials = [
     designation: "Senior Software Engineer",
     company: "Java, PHP",
     image: user,
+    website: "#"
+  },
+  {
+    testimonial:
+      "Always prefer to introduce myself as a Learner rather than an Expert. Everyday life is like programming. If we love something we can put beauty in it! - and that's what am always doing what I love the most.",
+    name: "Naim Siddiqui",
+    designation: "Jr. Software Engineer",
+    company: "React, NodeJS",
+    image: naim,
     website: "#"
   },
 ];
