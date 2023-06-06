@@ -11,11 +11,13 @@ const Container = styled.div`
   ${'' /* width: 1200px; */}
   display: flex;
   justify-content: space-between;
+  padding-left: 80px;
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
   }
 `;
 
