@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { EarthCanvas } from "./canvas/Earth";
 import { slideIn } from "../utils/motion";
 // import { OrbitControls } from "@react-three/drei";
@@ -80,18 +79,12 @@ const Who = () => {
   return (
     <Section>
       <Container>
-        {/* <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
-            <OrbitControls enableZoom={false} autoRotate />
-            <ambientLight intensity={1} />
-            <directionalLight position={[3, 2, 1]} />
-            <Cube />
-          </Canvas> */}
-        <motion.div
+        <div
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
           <EarthCanvas />
-        </motion.div>
+        </div>
 
         <Right>
           <Title>

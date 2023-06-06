@@ -14,7 +14,7 @@ const data = [
 ];
 
 const Section = styled.div`
-  ${'' /* height: 100vh; */}
+  height: 100vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -24,16 +24,6 @@ const Section = styled.div`
   font-weight: 300;
 `;
 
-const Container = styled.div`
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    flex-direction: column;
-  }
-`;
 
 const Left = styled.div`
   flex: 1;
@@ -96,10 +86,12 @@ const Right = styled.div`
 `;
 
 const Works = () => {
+  const isMediumOrLargeScreen = window.matchMedia('(max-width: 768px)').matches;
   const [work, setWork] = useState("Applications");
   return (
     <Section>
-      <Container>
+      <div className={`flex ${isMediumOrLargeScreen ? 'flex-col' : ''} justify-between`}
+      >
         <Left>
           <List>
             {data.map((item) => (
@@ -120,7 +112,7 @@ const Works = () => {
             <Social/>
           ):""}
         </Right>
-      </Container>
+      </div>
     </Section>
   );
 };

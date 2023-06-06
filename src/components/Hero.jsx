@@ -4,22 +4,11 @@ import Navbar from "./Navbar";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-const Section = styled.div`
-  height: 100vh;
-  scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  @media only screen and (max-width: 768px) {
-    height: 200vh;
-  }
-`;
 
 const Container = styled.div`
-  height: 100%;
+  ${'' /* height: 100%; */}
   scroll-snap-align: center;
-  width: 1200px;
+  ${'' /* width: 1200px; */}
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 768px) {
@@ -42,13 +31,6 @@ const Left = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 74px;
- 
-  @media only screen and (max-width: 768px) {
-    text-align: center;
-  }
-`;
 
 const WhatWeDo = styled.div`
   display: flex;
@@ -116,7 +98,7 @@ const Img = styled.img`
 `;
 const Hero = () => {
   return (
-    <Section id="hero">
+    <div id="hero" className="mt-20 flex flex-col justify-between items-center">
       <Navbar />
       
       <Container>
@@ -148,7 +130,7 @@ const Hero = () => {
           <Img src="./img/moon.png" />
         </Right>
       </Container>
-    </Section>
+    </div>
   );
 };
 
