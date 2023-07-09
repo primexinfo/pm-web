@@ -78,7 +78,7 @@ const Button = styled.button`
 const Who = () => {
   return (
     <Section>
-      <Container>
+      <Container className="mt-12 md:mt-32">
         <div
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto hidden md:block md:h-[550px] h-[350px]"
